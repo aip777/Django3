@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b723f89-8206-4c9f-a96e-18d81529e5af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crud/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/api/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/api/shell_examples.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirementsUpdate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_shots/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_shots/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_shots/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_shots/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_shots/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_shots/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_shots/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen_shots/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/sb-admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/sb-admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sample.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/elements/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/elements/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/elements/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/elements/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/upload_csv.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload_csv.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eMuCqEkEN9fIA5WYn5JnKOTl6j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/crud" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/crud" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b723f89-8206-4c9f-a96e-18d81529e5af" name="Default Changelist" comment="" />
+      <created>1594143657366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594143657366</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="570" y="140" width="770" height="782" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594149735777">
+      <screen x="0" y="27" width="1920" height="1010" />
+    </state>
+    <state x="570" y="140" width="770" height="782" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1010@0.27.1920.1010" timestamp="1594149735777" />
+    <state x="651" y="252" width="878" height="586" key="find.popup" timestamp="1594160325583">
+      <screen x="0" y="27" width="1920" height="1010" />
+    </state>
+    <state x="651" y="252" width="878" height="586" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1594160325583" />
+  </component>
+</project>

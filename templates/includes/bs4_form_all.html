@@ -11,9 +11,11 @@
         {% endfor %}
     </div>
 {% endif %}
+{{ field.label_tag }}
 {% for field in form.visible_fields %}
     <div class="form-group">
         <div class="form-label-group">
+
             {% if form.is_bound %}
                 {% if field.errors %}
                     {% render_field field class="form-control is-invalid" %}
@@ -28,7 +30,7 @@
             {% else %}
                 {% render_field field class="form-control" %}
             {% endif %}
-            {{ field.label_tag }}
+
 
 
             {% if field.help_text %}

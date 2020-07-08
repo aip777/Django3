@@ -35,9 +35,10 @@ urlpatterns = [
     path('', include('crud.urls')),
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+    path('login/', auth_views.LoginView.as_view(template_name='covid/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='logged_out.html'), name='logout'),
     path('password/reset/', auth_views.LoginView.as_view(template_name='login.html'), name='logout'),
+    path('covid/', TemplateView.as_view(template_name='covid/index.html'), name='covid'),
 
     path(r'api/covid19/', include('crud.api.urls')),
     path(r'api/auth/jwt/', obtain_jwt_token),

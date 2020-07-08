@@ -146,7 +146,7 @@ USE_TZ = True
 
 LOGIN_URL = '/login/'
 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'covid'
 
 # STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static")
 

@@ -42,6 +42,7 @@ class CsvUpload(models.Model):
     totalRecovered = models.CharField(max_length=255, blank=True)
     totalDeaths = models.CharField(max_length=255, blank=True)
     totalTests = models.CharField(max_length=255, blank=True)
+    start_date = models.CharField(max_length=255, blank=True)
 
 
 

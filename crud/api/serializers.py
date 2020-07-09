@@ -7,6 +7,7 @@ class StatusSerializer(serializers.ModelSerializer):
         model = CsvUpload
         fields = [
             'id',
+            'start_date',
             'affectedtoday',
             'todayRecovered',
             'todayDeaths',

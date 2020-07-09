@@ -236,7 +236,8 @@ def upload_csv(request):
                         and (fields[6] == 'totalPositive') \
                         and (fields[7] == 'totalRecovered') \
                         and (fields[8] == 'totalDeaths') \
-                        and (fields[9] == 'totalTests'):
+                        and (fields[9] == 'totalTests') \
+                        and (fields[10] == 'start_date'):
                     pass
                 else:
                     messages.error(request, 'File is not Correct Headers')
@@ -253,7 +254,8 @@ def upload_csv(request):
                         and (len(fields[6]) != 0) \
                         and (len(fields[7]) != 0) \
                         and (len(fields[8]) != 0) \
-                        and (len(fields[9]) != 0):
+                        and (len(fields[9]) != 0)\
+                        and (len(fields[10]) != 0):
                     data = CsvUpload(
                         name=fields[0],
                         end_date=datetime.datetime.now(),
@@ -264,7 +266,8 @@ def upload_csv(request):
                         totalPositive=fields[6],
                         totalRecovered=fields[7],
                         totalDeaths=fields[8],
-                        totalTests=fields[9]
+                        totalTests=fields[9],
+                        start_date=fields[10]
                     )
                     data.save()
         messages.success(request, "Successfully Uploaded CSV File")

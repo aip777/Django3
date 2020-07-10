@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b723f89-8206-4c9f-a96e-18d81529e5af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/CDCSV.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/.~lock.sampleFristNew.csv#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/samampl (1).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/samampl (2).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/sample (3).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/sampleFristNew.csv" beforeDir="false" afterPath="$PROJECT_DIR$/static/sample.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upload_csv.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload_csv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/static/sample.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

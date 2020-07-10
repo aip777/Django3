@@ -9,10 +9,10 @@ admin.site.register(ContactList)
 
 
 class CovidAdmin(admin.ModelAdmin):
-  list_display = ('id', 'name','affectedtoday', 'todayRecovered', 'todayDeaths', 'todayTests', 'totalPositive', 'totalRecovered', 'totalDeaths', 'totalTests')
+  list_display = ('id', 'name', 'start_date','affectedtoday', 'todayRecovered', 'todayDeaths', 'todayTests', 'totalPositive', 'totalRecovered', 'totalDeaths', 'totalTests', 'end_date')
   list_display_links = ('id', 'name')
   search_fields = ('name', 'affectedtoday', 'todayRecovered', 'todayDeaths', 'todayTests', 'totalPositive', 'totalRecovered')
-  list_per_page = 25
+  list_per_page = 30
 
 admin.site.register(CsvUpload, CovidAdmin)
 

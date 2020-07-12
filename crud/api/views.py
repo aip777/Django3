@@ -6,8 +6,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 
-from crud.models import CsvUpload
-from .serializers import StatusSerializer
+from crud.models import CsvUpload, CsvUploadFile
+from .serializers import StatusSerializer, DistrictAndDivision
 
 
 # # CreateModelMixin --- POST method
@@ -69,6 +69,57 @@ class CovidAPIView(
 
     # def perform_create(self, serializer):
     #     serializer.save(user=self.request.user)
+
+
+
+
+class DistrictAndDivisionDetailAPI(
+    mixins.UpdateModelMixin,
+    mixins.DestroyModelMixin,
+    generics.RetrieveAPIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    serializer_class = DistrictAndDivision
+    queryset = CsvUploadFile.objects.all()
+    lookup_field = 'id'
+
+    # def put(self, request, *args, **kwargs):
+    #     return self.update(request, *args, **kwargs)
+
+    def patch(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+
+    # def delete(self, request, *args, **kwargs):
+    #     return self.destroy(request, *args, **kwargs)
+
+    # def perform_update(self, serializer):
+    #     serializer.save(updated_by_user=self.request.user)
+
+    # def perform_destroy(self, instance):
+    #     if instance is not None:
+    #         return instance.delete()
+    #     return None
+
+
+class DistrictAndDivisionAPIView(
+    mixins.CreateModelMixin,
+    generics.ListAPIView):
+    permission_classes              = [permissions.IsAuthenticatedOrReadOnly]
+    serializer_class                = DistrictAndDivision
+    passed_id                       = None
+
+    def get_queryset(self):
+        request = self.request
+        qs = CsvUploadFile.objects.all()
+        query = request.GET.get('q')
+        if query is not None:
+            qs = qs.filter(content__icontains=query)
+        return qs
+
+
+
+
+
+
 
 
 

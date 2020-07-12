@@ -9,10 +9,15 @@ from .views import (
     # StatusDetailAPIView,
     # StatusUpdateAPIView,
     # StatusDeleteAPIView,
+    DistrictAndDivisionAPIView,
+    DistrictAndDivisionDetailAPI,
 )
 urlpatterns = [
     url(r'^$', CovidAPIView.as_view()),
     url(r'^(?P<id>\d+)/$', ListingAPIDetailView.as_view()),
+
+    url(r'^district/$', DistrictAndDivisionAPIView.as_view()),
+    url(r'^district/(?P<id>\d+)/$', DistrictAndDivisionDetailAPI.as_view()),
 
     # url(r'^create/$', StatusCreateAPIView.as_view()),
     # url(r'(?P<id>\d+)/$', StatusDetailAPIView.as_view()),

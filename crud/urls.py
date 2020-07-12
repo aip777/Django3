@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^users/$',views.users,name='users'),
     url(r'^users/delete/(?P<id>\d+)$', views.user_delete, name='user_delete'),
     url(r'^upload/csv/$', views.upload_csv, name='upload_csv'),
+    url(r'^upload/csvfile/$', views.upload_csv_file, name='upload_csv_file'),
     url(r'^change_password$', views.changePassword, name='changePassword'),
     url(r'^file/delete$', views.changePassword, name='changePassword'),
     url(r'^file/delete/(?P<id>\d+)$', views.deleteFiles, name='deleteFiles'),

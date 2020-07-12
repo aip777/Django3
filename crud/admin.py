@@ -16,3 +16,14 @@ class CovidAdmin(admin.ModelAdmin):
 
 admin.site.register(CsvUpload, CovidAdmin)
 
+
+
+class CovidDistrict(admin.ModelAdmin):
+  list_display = ('id', 'start_date', 'SylhetDivision','RangpurDivision', 'RajshahiDivision', 'MymensinghDivision', 'KhulnaDivision', 'DhakaDivision', 'ChittagongDivision', 'BarisalDivision')
+  list_display_links = ('id', 'SylhetDivision')
+  search_fields = ('id', 'start_date')
+  list_per_page = 30
+
+admin.site.register(CsvUploadFile, CovidDistrict)
+
+

@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b723f89-8206-4c9f-a96e-18d81529e5af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/district.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Csv/upload_csv.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/static/sample.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/elements/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/elements/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +35,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/templates/Csv" />
       <recent name="$PROJECT_DIR$/templates/covid" />
       <recent name="$PROJECT_DIR$/crud" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -53,9 +64,9 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="570" y="140" width="770" height="782" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1010@0.27.1920.1010" timestamp="1594200216800" />
-    <state x="651" y="252" width="878" height="586" key="find.popup" timestamp="1594398942574">
+    <state x="651" y="252" width="878" height="680" key="find.popup" timestamp="1594494130962">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="651" y="252" width="878" height="586" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1594398942574" />
+    <state x="651" y="252" width="878" height="680" key="find.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1594494130962" />
   </component>
 </project>

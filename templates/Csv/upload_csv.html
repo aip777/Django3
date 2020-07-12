@@ -1,0 +1,238 @@
+{% extends 'layout/app.html' %}
+{% load static %}
+{% block stylesheet %}
+    <style>
+    </style>
+{% endblock %}
+{% block body %}
+    <div id="content-wrapper">
+    <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">CSV Upload</li>
+        </ol>
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fas fa-table"></i>
+                CSV Upload
+                <a class="btn-sm btn btn-success" href="{% static 'district.csv' %}"  download style="float: right"><span class="fa fa-download" ></span> &nbsp;download sample CSV</a>
+            </div>
+            <div class="card-body">
+                <form action="{% url 'upload_csv_file' %}" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="input-group input-group-lg">
+                                    <div class="custom-file">
+                                        <input type="file" class="form-control custom-file-input file" name="csv_file_district" id="input01">
+                                        <label class="custom-file-label" id="fileLabel" for="input01">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-group input-group-lg">
+                                    <div class="custom-file">
+                                        <button class="btn btn-primary btn-block" id="submitBtn" disabled type="submit">Upload &nbsp;&nbsp;&nbsp;<span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fas fa-table"></i>
+                File List
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm" id="dataTable">
+                        <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Sylhet Division</th>
+                            <th scope="col">Rangpur Division</th>
+                            <th scope="col">Rajshahi Division</th>
+                            <th scope="col">Mymensingh Division</th>
+                            <th scope="col">Khulna Division</th>
+                            <th scope="col">Dhaka Division</th>
+                            <th scope="col">Chittagong Division</th>
+
+                            <th scope="col">Bagerhat</th>
+                            <th scope="col">Bandarban</th>
+                            <th scope="col">Barguna</th>
+                            <th scope="col">Barisal</th>
+                            <th scope="col">Bhola</th>
+                            <th scope="col">Bogra</th>
+                            <th scope="col">Brahmanbaria</th>
+                            <th scope="col">Chandpur</th>
+                            <th scope="col">Chittagong</th>
+                            <th scope="col">Chuadanga</th>
+                            <th scope="col">Comilla</th>
+                            <th scope="col">CoxsBazar</th>
+                            <th scope="col">Dhaka</th>
+                            <th scope="col">Dinajpur</th>
+                            <th scope="col">Faridpur</th>
+                            <th scope="col">Feni</th>
+                            <th scope="col">Gaibandha</th>
+                            <th scope="col">Gazipur</th>
+                            <th scope="col">Gopalganj</th>
+                            <th scope="col">Habiganj</th>
+                            <th scope="col">Jaipurhat</th>
+                            <th scope="col">Jamalpur</th>
+                            <th scope="col">Jessore</th>
+                            <th scope="col">Jhalakati</th>
+                            <th scope="col">Jhenaidah</th>
+                            <th scope="col">Khagrachari</th>
+                            <th scope="col">Khulna</th>
+                            <th scope="col">Kishoreganj</th>
+                            <th scope="col">Kurigram</th>
+                            <th scope="col">Kushtia</th>
+                            <th scope="col">Lakshmipur</th>
+                            <th scope="col">Lalmonirhat</th>
+                            <th scope="col">Madaripur</th>
+                            <th scope="col">Magura</th>
+                            <th scope="col">Manikganj</th>
+                            <th scope="col">Meherpur</th>
+                            <th scope="col">Moulvibazar</th>
+                            <th scope="col">Munshiganj</th>
+                            <th scope="col">Mymensingh</th>
+                            <th scope="col">Naogaon</th>
+                            <th scope="col">Narail</th>
+                            <th scope="col">Narayanganj</th>
+                            <th scope="col">Narsingdi</th>
+                            <th scope="col">Natore</th>
+                            <th scope="col">Nawabganj</th>
+                            <th scope="col">Netrakona</th>
+                            <th scope="col">Nilphamari</th>
+                            <th scope="col">Noakhali</th>
+                            <th scope="col">Pabna</th>
+                            <th scope="col">Panchagarh</th>
+                            <th scope="col">ParbattyaChattagram</th>
+                            <th scope="col">Patuakhali</th>
+                            <th scope="col">Pirojpur</th>
+                            <th scope="col">Rajbari</th>
+                            <th scope="col">Rajshahi</th>
+                            <th scope="col">Rangpur</th>
+                            <th scope="col">Satkhira</th>
+                            <th scope="col">Shariatpur</th>
+                            <th scope="col">Sherpur</th>
+                            <th scope="col">Sirajganj</th>
+                            <th scope="col">Sunamganj</th>
+                            <th scope="col">Sylhet</th>
+                            <th scope="col">Tangail</th>
+                            <th scope="col">Thakurgaon</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for member in csvdatafield %}
+                            <tr>
+                                <td>{{ member.id }}</td>
+                                <td>{{ member.start_date }}</td>
+                                <td>{{ member.SylhetDivision}}</td>
+                                <td>{{ member.RangpurDivision }}</td>
+                                <td>{{ member.RajshahiDivision }}</td>
+                                <td>{{ member.MymensinghDivision }}</td>
+                                <td>{{ member.KhulnaDivision }}</td>
+                                <td>{{ member.DhakaDivision }}</td>
+                                <td>{{ member.ChittagongDivision }}</td>
+                                <td>{{ member.Bagerhat }}</td>
+                                <td>{{ member.Bandarban }}</td>
+                                <td>{{ member.Barguna }}</td>
+                                <td>{{ member.Barisal }}</td>
+                                <td>{{ member.Bhola }}</td>
+                                <td>{{ member.Bogra }}</td>
+                                <td>{{ member.Brahmanbaria }}</td>
+                                <td>{{ member.Chandpur }}</td>
+                                <td>{{ member.Chittagong }}</td>
+                                <td>{{ member.Chuadanga }}</td>
+                                <td>{{ member.Comilla }}</td>
+                                <td>{{ member.CoxsBazar }}</td>
+                                <td>{{ member.Dhaka }}</td>
+                                <td>{{ member.Dinajpur }}</td>
+                                <td>{{ member.Faridpur }}</td>
+                                <td>{{ member.Feni }}</td>
+                                <td>{{ member.Gaibandha }}</td>
+                                <td>{{ member.Gazipur }}</td>
+                                <td>{{ member.Gopalganj }}</td>
+                                <td>{{ member.Habiganj }}</td>
+                                <td>{{ member.Jaipurhat }}</td>
+                                <td>{{ member.Jamalpur }}</td>
+                                <td>{{ member.Jessore }}</td>
+                                <td>{{ member.Jhalakati }}</td>
+                                <td>{{ member.Jhenaidah }}</td>
+                                <td>{{ member.Khagrachari }}</td>
+                                <td>{{ member.Khulna }}</td>
+                                <td>{{ member.Kishoreganj }}</td>
+                                <td>{{ member.Kurigram }}</td>
+                                <td>{{ member.Kushtia }}</td>
+                                <td>{{ member.Lakshmipur }}</td>
+                                <td>{{ member.Lalmonirhat }}</td>
+                                <td>{{ member.Madaripur }}</td>
+                                <td>{{ member.Magura }}</td>
+                                <td>{{ member.Manikganj }}</td>
+                                <td>{{ member.Meherpur }}</td>
+                                <td>{{ member.Moulvibazar }}</td>
+                                <td>{{ member.Munshiganj }}</td>
+                                <td>{{ member.Mymensingh }}</td>
+
+                                <td>{{ member.Naogaon }}</td>
+                                <td>{{ member.Narail }}</td>
+                                <td>{{ member.Narayanganj }}</td>
+                                <td>{{ member.Narsingdi }}</td>
+                                <td>{{ member.Natore }}</td>
+                                <td>{{ member.Nawabganj }}</td>
+                                <td>{{ member.Netrakona }}</td>
+                                <td>{{ member.Nilphamari }}</td>
+                                <td>{{ member.Noakhali }}</td>
+                                <td>{{ member.Pabna }}</td>
+                                <td>{{ member.Panchagarh }}</td>
+                                <td>{{ member.ParbattyaChattagram }}</td>
+                                <td>{{ member.Patuakhali }}</td>
+                                <td>{{ member.Pirojpur }}</td>
+                                <td>{{ member.Rajbari }}</td>
+                                <td>{{ member.Rajshahi }}</td>
+                                <td>{{ member.Rangpur }}</td>
+                                <td>{{ member.Satkhira }}</td>
+                                <td>{{ member.Shariatpur }}</td>
+                                <td>{{ member.Sherpur }}</td>
+                                <td>{{ member.Sirajganj }}</td>
+                                <td>{{ member.Sunamganj }}</td>
+                                <td>{{ member.Sylhet }}</td>
+                                <td>{{ member.Tangail }}</td>
+                                <td>{{ member.Thakurgaon }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascript %}
+    <script>
+        $(document).on('change', '.file', function (event) {
+            document.getElementById('fileLabel').innerHTML = event.target.files[0].name;
+            if (event.target.files[0].name){
+                document.getElementById('submitBtn').disabled = false;
+            }
+        });
+    </script>
+
+{% endblock %}
